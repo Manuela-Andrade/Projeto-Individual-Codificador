@@ -1,4 +1,5 @@
-/* Troca do texto do botão */
+
+//Troca o texto do button
 
 const codificar = document.getElementById('codificar');
 const decodificar = document.getElementById('decodificar');
@@ -13,7 +14,7 @@ function mudarTexto() {
   }
 }
 
-/* Mostrar ou esconder a opção inclemento */
+//Aparecer e sumir com o inclemento 
 const cesar = document.getElementById('cesar');
 const base64 = document.getElementById('base64');
 const incrementar = document.getElementById('incrementar');
@@ -39,7 +40,7 @@ botao.addEventListener('click', function(event) {
   opcaoEscolhida();
 });
 
-/* Calculos */
+//Fazendo os calculos
 
 function codificarCesar(mensagem) {
   mensagem = mensagem.split("");
