@@ -3,6 +3,7 @@
 const codificar = document.getElementById('codificar');
 const decodificar = document.getElementById('decodificar');
 const botao = document.getElementById('button');
+const copiar = document.getElementById("copiar");
 
 function mudarTexto() {
   if (decodificar.checked) {
@@ -17,16 +18,16 @@ const cesar = document.getElementById('cesar');
 const base64 = document.getElementById('base64');
 const incrementar = document.getElementById('incrementar');
 
-function mostraIncremento() { 
+function apareceIncremento() { 
   incrementar.style.display = "block"; 
 }
 
-function escondeIncremento() {
+function someIncremento() {
   incrementar.style.display = "none";
 }
 
-cesar.addEventListener('change', mostraIncremento);
-base64.addEventListener('change', escondeIncremento);
+cesar.addEventListener('change', apareceIncremento);
+base64.addEventListener('change', someIncremento);
 
 const resultado = document.getElementById('resultado');
 const incremento = parseInt(document.getElementById('incremento').value);
@@ -84,12 +85,7 @@ function opcaoEscolhida () {
          resultado.innerText = "Informe o tipo de código ";
       }
   }
-  const copiar = document.getElementById("copiar");
-  
-  copiar.onclick = () => {
-    navigator.clipboard.writeText(resultado.innerText);
-  }
-
+ 
 
 
 

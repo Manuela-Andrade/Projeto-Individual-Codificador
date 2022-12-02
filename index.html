@@ -8,14 +8,11 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   
 </head>
 
 <body>
-    <header>  Codificador</h1>
-    </header>  
+    <h1>Codificador</h1>  
 
 <main>
     <form>
@@ -29,7 +26,7 @@
     <section>
         <label><strong>Mensagem:</strong></label>
      <br>   
-        <textarea name="mensagem" id="mensagem" cols="50" rows="10" placeholder="Digite a sua mensagem..."></textarea>
+        <textarea name="mensagem" id="mensagem" cols="50" rows="10" placeholder="Escreva a sua mensagem..."></textarea>
     </section>
 
     <section id="incrementar" >
@@ -43,15 +40,14 @@
         <input  type="radio" id="decodificar" name="opcao2" onclick="mudarTexto()">
         <label for="decodificar">Decodificar</label>
     </section>
- 
-    <br>
+
         <button id="button" class="button-style">Codificar</button>
     
     <div class="result">
         <label><strong>Resultado:</strong></label>
     <br>
-         <textarea type="text" name="resultado" id="resultado" cols="50" rows="10" ></textarea>
-         <button class="btn-copiar" id="copiar">Copiar</button>
+         <textarea  name="resultado" id="resultado" cols="50" rows="10" ></textarea>
+        
         </div>
     </form>
 </main>
